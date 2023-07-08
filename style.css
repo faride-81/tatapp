@@ -31,6 +31,10 @@ body {
 header {
     border-bottom: solid 2px rgb(227, 229, 231);
     width: 100%;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 .container {
     flex-direction: row;
@@ -58,8 +62,9 @@ header {
     border-bottom: solid 1px rgb(29, 78, 216);
 }
 .section__1 {
-    width: 100%;
+    display: flex;
     flex-direction: row;
+    width: 100%;
 }
 section .section__1--img {
     width: 50%;
@@ -68,35 +73,35 @@ section .section__1--img img {
     width: 100%;
 }
 .section__1 .flex {
-    direction: rtl;
+    width: 50%;
     background-color: rgb(30, 64, 175);
+    flex-direction: column;
 }
-.section__1 .flex .container__1 {
+section .section__1--img .container__1 {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 90%;
+    text-align: end;
     margin: 0 auto;
-}
-.container__1 .container__1__subject {
-    color: antiquewhite;
-    font-size: 2.5rem;
+    color: white;
     font-weight: bold;
 }
-.container__1 .container__1__text {
-    color: antiquewhite;
-    font-weight: bold;
+section .section__1--img .container__1 .container__1__subject {
+    font-size: 2.8rem;
+    margin-top: 5rem;
+} 
+section .section__1--img .container__1 .container__1__text {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    word-spacing: 0.15rem;
 }
-.container__1 .container__1__button {
+section .section__1--img .container__1 .container__1__button {
     border: white 1px solid;
-    width: 30%;
-    text-align: center;
     padding: 0.5rem;
+    direction: rtl;
+    width: 20%;
+    text-align: center;
 }
-.container__1 .container__1__button a {
-    color: antiquewhite;
-}
-
 @media (max-width: 1300px) {
     .container {
         width: 90%;
