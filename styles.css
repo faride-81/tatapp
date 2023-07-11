@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "iranyekan" ;
+    src: url("fonts/iranyekan/eot/iranyekanwebregular.eot?#") ,
+    url("fonts/iranyekan/ttf/iranyekanwebregular.ttf") format('truetype'),
+    url("fonts/iranyekan/woff/iranyekanwebregular.woff") format('woff'),
+    url("fonts/iranyekan/svg/iranyekanwebregular.svg") format('svg');
+}
+@font-face {
+    font-family: "iranyekan_numbers" ;
+    src: url("fonts/iranyekan_numbers/eot/iranyekanwebregular(fanum).eot?#") ,
+    url("fonts/iranyekan_numbers/ttf/iranyekanwebregular(fanum).ttf") format('truetype'),
+    url("fonts/iranyekan_numbers/woff/iranyekanwebregular(fanum).woff") format('woff'),
+    url("fonts/iranyekan_numbers/svg/iranyekanwebregular(fanum).svg") format('svg');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #e5e7eb;
+    font-family: 'iranyekan_numbers','iranyekan';
+}
+form { 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.form {
+    border-radius: 00.5rem;
+    width: 350px;
+    display: inline-block;
+    padding: 2rem;
+    background-color: white;
+
+}
+form .form__text1 {
+    font-size: 1.25rem;
+}
+form .form__text2 {
+    margin-top: 2rem;
+    direction: rtl;
+}
+form .form__input {
+    width: 100%;
+}
+form .form__input input {
+    width: 100%;
+    padding: 0.7rem 0.1rem;   
+    margin-top: 3rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    font-weight: bold;
+    border:  solid 1px rgb(153,163,175);
+    color: rgb(153,163,175);
+    background-color: rgb(229, 231, 235);
+}
+form .form__button {
+    background-color: royalblue;
+    margin-top: 2rem;
+    padding: 0.5rem 0.2rem;   
+    width: 100%;
+    border-radius: 0.2rem;
+}
+form .form__button a {
+    color: white;
+}

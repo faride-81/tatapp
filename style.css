@@ -26,13 +26,13 @@ a {
     display: grid;
 }
 body {
+    background-color: rgb(240, 240, 240);
     font-family: 'iranyekan_numbers','iranyekan';
 }
 header {
     border-bottom: solid 2px rgb(227, 229, 231);
     width: 100%;
     background-color: white;
-    overflow: hidden;
     position: fixed;
     top: 0;
 }
@@ -58,58 +58,248 @@ header {
     color: black;
     padding: 0.5rem;
 }
-.container .header__grid .grid__text a:hover {
-    border-bottom: solid 1px rgb(29, 78, 216);
+.container .header__grid .grid__text {
+    margin-bottom: 0.5rem;
 }
-.section__1 {
+.container .header__grid .animation .hr {
+    display: none;
+    width: 10px;
+}
+.container .header__grid .animation:hover .hr {
+    display: block;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-name: my__animationn;
+    width: 0;
+
+}
+@keyframes my__animationn {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+.section1 {
+    margin-top: 4.5rem;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-section .section__1--img {
+section .background {
     width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(./2023-05-20-12-54-10-82838.jpeg);
 }
-section .section__1--img img {
-    width: 100%;
-}
-.section__1 .flex {
+.section1 .flex {
     width: 50%;
     background-color: rgb(30, 64, 175);
     flex-direction: column;
 }
-section .section__1--img .container__1 {
+section .section1--img .container1 {
     width: 90%;
+    align-items: end;
     display: flex;
     flex-direction: column;
     text-align: end;
-    margin: 0 auto;
+    margin: 3rem auto;
     color: white;
     font-weight: bold;
 }
-section .section__1--img .container__1 .container__1__subject {
-    font-size: 2.8rem;
-    margin-top: 5rem;
+section .section1--img .container1 .container1__subject {
+    font-size: 2.4rem; 
+    margin-bottom: 3rem;
 } 
-section .section__1--img .container__1 .container__1__text {
+section .section1--img .container1 .container1__text {
     font-size: 1rem;
-    margin-top: 1.8rem;
-    word-spacing: 0.15rem;
+    margin-bottom: 2rem;
+    direction: rtl;
+    text-align: start;
 }
-section .section__1--img .container__1 .container__1__button {
+section .section1--img .container1 .container1__button {
     border: white 1px solid;
     padding: 0.5rem;
     direction: rtl;
-    width: 20%;
+    width: 200px;
     text-align: center;
+}
+section .section1--img .container1 .container1__button:hover {
+    background-color: white;
+}
+section .section1--img .container1 .container1__button:hover a {
+    color: rgb(30, 64, 175);
+}
+section .section1--img .container1 .container1__button a {
+    color: white;
+}
+.section2 {
+    margin: 0 auto;
+}
+.section2__p {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+.section2__p p {
+    margin-top: 2rem;
+    font-weight: bold;
+}
+.section2 .section2__grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 3rem auto;
+    direction: rtl;
+}
+.section2 .section2__grid .grid--5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+.section2 .section2__grid .grid--5 .grid--5__icon {
+    margin-top: 0.9rem;
+}
+.section2 .section2__grid .grid--5 .grid--5__icon svg {
+    color: rgb(30, 64, 175);
+}
+.section2 .section2__grid .grid--5 .grid--5__text .top {
+    font-weight: bold;
+    color: black;
+}
+.section2 .section2__grid .grid--5 .grid--5__text .bottom {
+    color: rgb(75, 79, 82);
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.row-reverse .background {
+    background-image: url(./about-us.jpg);
+}
+.section3 {
+    width: 70%;
+    margin: 3rem auto;
+    margin-bottom: 10rem;
+}
+.section3  .section3--hover {
+    color: black;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 0.9rem;
+    border-radius: 0.25rem;
+    margin-top: 2rem;
+}
+.section3  .section3--hover .icon {
+    width: 5%;
+}
+.section3  .section3--hover .text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 80%;
+}
+.section3  .section3--hover .text .text__blok {
+    text-align: end;
+}
+.section3  .section3--hover .text .text__none {
+    display: none;
+    text-align: end;
+    background-color: white;
+}
+.section3  .section3--hover .text:hover .text__none{
+    display: block;
+}
+footer {
+    background-color: white;
+}
+footer .footer__container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    direction: rtl;
+    text-align: center;
+}
+footer .footer__container .footer__container__grid {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem; 
+}    
+footer .footer__container .footer__container__grid a {
+    color: black;
+}
+footer .footer__container .footer__container__icon svg {
+    color: rgb(75, 79, 82);
+    margin-bottom: 2rem; 
+}
+footer .footer__container .footer__container__text {
+    width: 100%;
+}
+footer .footer__container .footer__container__text a {
+    color: rgb(30, 64, 175);
 }
 @media (max-width: 1300px) {
     .container {
         width: 90%;
     }
+    footer .footer__container .footer__container__text {
+        font-size: 00.9rem;
+    }
+}
+@media (max-width: 1000px) {
+    footer .footer__container {
+        width: 70%;
+    }
+    footer .footer__container .footer__container__grid {
+        width: 100%;
+    }
 }
 @media (max-width: 750px) {
     .container .header__grid .grid__text {
         font-size: 0.8rem;
+    }
+    .section1 {
+        flex-direction: column-reverse;
+    }
+    .section1 .background {
+        width: 100%;
+        height: 50vh;
+    }
+    .section1 .flex {
+        width: 100%;
+    }
+    .section2 .section2__grid {
+        display: block;
+    }
+    .section2 .section2__grid .grid--5 {
+        justify-content: space-evenly;
+        width: 60%;
+    }
+    .section3 {
+        width: 90%;
+    } 
+    .section3  .section3--hover .text {
+        font-size: 0.9rem;
+    }
+    footer .footer__container .footer__container__text {
+        font-size: 00.8rem;
+    }
+    @keyframes my__animationn {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 80%;
+        }
     }
 }
 @media (max-width: 600px) {
@@ -123,5 +313,8 @@ section .section__1--img .container__1 .container__1__button {
     header .flex .header__grid {
         width: 70%;
         margin-bottom: 1rem;
+    }
+    footer .footer__container {
+        width: 90%;
     }
 } 
