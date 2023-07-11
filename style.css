@@ -68,7 +68,7 @@ header {
 .container .header__grid .animation:hover .hr {
     display: block;
     animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-name: my__animationn;
     width: 0;
 
