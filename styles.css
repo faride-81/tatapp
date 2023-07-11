@@ -68,6 +68,13 @@ form .form__button {
     width: 100%;
     border-radius: 0.2rem;
 }
+form .form__button button {
+    background-color: royalblue;
+    border: unset;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
 form .form__button a {
     color: white;
 }
